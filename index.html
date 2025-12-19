@@ -6,26 +6,28 @@
   <title>Vansh Savaliya | AI Engineer</title>
 
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Segoe UI", sans-serif;
       background: #0f172a;
       color: #e5e7eb;
       line-height: 1.6;
     }
 
+    a { color: #38bdf8; text-decoration: none; }
+
     header {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #1e293b, #020617);
     }
 
     header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 48px;
     }
 
     header p {
+      margin-top: 10px;
       font-size: 18px;
       color: #94a3b8;
     }
@@ -33,35 +35,51 @@
     section {
       max-width: 1100px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
 
     h2 {
-      color: #38bdf8;
-      border-bottom: 2px solid #1e293b;
-      padding-bottom: 8px;
       margin-bottom: 25px;
+      font-size: 32px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 15px;
+    }
+
+    .about p {
+      max-width: 800px;
+      color: #cbd5f5;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 14px;
+      background: #1e293b;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .card {
       background: #020617;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       border: 1px solid #1e293b;
+      transition: transform 0.2s;
     }
 
-    ul {
-      padding-left: 20px;
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    .skills span {
-      display: inline-block;
-      background: #1e293b;
-      padding: 6px 12px;
-      margin: 6px;
-      border-radius: 20px;
-      font-size: 14px;
+    .card h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
     }
 
     footer {
@@ -70,122 +88,90 @@
       background: #020617;
       color: #64748b;
     }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Vansh Savaliya</h1>
+  <h1>Hi, I'm Vansh 👋</h1>
   <p>AI Developer | ML Engineer | Backend Specialist</p>
-  <p>📧 vanshsavaliya6565@gmail.com | 📞 +91 7874347107</p>
+  <p>
+    <a href="mailto:vanshsavaliya6565@gmail.com">Email</a> ·
+    <a href="https://github.com/Vansh-257" target="_blank">GitHub</a> ·
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </p>
 </header>
 
-<section>
-  <h2>Professional Summary</h2>
+<section class="about">
+  <h2>About Me</h2>
   <p>
     AI and Machine Learning Engineer with strong experience in Generative AI,
-    backend systems, and scalable AI-driven platforms. Skilled in LLMs, RAG,
-    AI agents, voice AI, and production-grade FastAPI systems. Passionate about
-    building real-world AI products that drive business impact.
+    LLMs, RAG systems, Voice AI, and scalable FastAPI backends.
+    I enjoy building real-world AI products that solve business problems
+    and scale to production.
   </p>
 </section>
 
 <section>
-  <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Senior Generative AI Engineer</h3>
-    <p><b>Softus Infotech</b> | Mar 2023 – Present</p>
-    <ul>
-      <li>Designed and deployed advanced AI & ML solutions aligned with business goals.</li>
-      <li>Built scalable FastAPI-based APIs to automate workflows.</li>
-      <li>Delivered production-ready AI systems solving real business problems.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Generative AI Engineer</h3>
-    <p><b>Trakshym</b> | Mar 2021 – Mar 2022</p>
-    <ul>
-      <li>Developed AI-driven features improving system efficiency.</li>
-      <li>Built and maintained backend services for scalable data processing.</li>
-      <li>Automated business operations using AI-powered pipelines.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Key Projects</h2>
-
-  <div class="card">
-    <h3>Dental Voice AI – Appointment Booking Agent</h3>
-    <ul>
-      <li>Real-time voice AI using Pipecat + Twilio.</li>
-      <li>GPT-4o + Whisper for intent detection.</li>
-      <li>FastAPI + WebSockets backend for concurrent calls.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>HelloDexter – AI Lead Generation Platform</h3>
-    <ul>
-      <li>Aggregated verified leads from 10+ premium sources.</li>
-      <li>Handled massive-scale contact databases.</li>
-      <li>Built APIs for seamless outreach integration.</li>
-    </ul>
-    <p>🔗 <a href="https://app.hellodexter.com/" target="_blank">Live Project</a></p>
-  </div>
-
-  <div class="card">
-    <h3>MediAssist AI – Healthcare Automation</h3>
-    <ul>
-      <li>AI-driven treatment & medication optimization.</li>
-      <li>Drug substitution logic with safety validation.</li>
-      <li>Medical data scraping & clinical rule engines.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Technical Skills</h2>
+  <h2>Skills</h2>
   <div class="skills">
-    <span>Python</span>
-    <span>FastAPI</span>
-    <span>LLMs</span>
-    <span>RAG</span>
-    <span>LangChain</span>
-    <span>LangGraph</span>
-    <span>Voice AI</span>
-    <span>Computer Vision</span>
-    <span>MongoDB</span>
-    <span>PostgreSQL</span>
-    <span>Elasticsearch</span>
-    <span>Docker</span>
-    <span>AWS</span>
-    <span>Azure</span>
-    <span>GCP</span>
+    <span>Python</span><span>FastAPI</span><span>LLMs</span>
+    <span>RAG</span><span>LangChain</span><span>LangGraph</span>
+    <span>Voice AI</span><span>MongoDB</span><span>PostgreSQL</span>
+    <span>Elasticsearch</span><span>Docker</span>
+    <span>AWS</span><span>Azure</span><span>GCP</span>
   </div>
 </section>
 
 <section>
-  <h2>Education</h2>
-  <div class="card">
-    <p><b>B.Tech in Computer Science</b></p>
-    <p>Gujarat Technological University</p>
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Dental Voice AI</h3>
+      <p>Real-time AI voice agent for dental appointment booking using Twilio,
+      Pipecat, GPT-4o and FastAPI.</p>
+    </div>
+
+    <div class="card">
+      <h3>HelloDexter</h3>
+      <p>AI-powered lead generation platform aggregating verified data
+      from multiple premium sources.</p>
+      <a href="https://app.hellodexter.com/" target="_blank">Live →</a>
+    </div>
+
+    <div class="card">
+      <h3>MediAssist AI</h3>
+      <p>AI-driven healthcare automation platform for treatment optimization
+      and drug substitution.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dextera Intelligence</h3>
+      <p>AI-powered social media scraping and engagement automation
+      across LinkedIn, Twitter, Facebook, Instagram.</p>
+    </div>
+
   </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Senior Generative AI Engineer – Softus Infotech</h3>
+    <p>Mar 2023 – Present</p>
+    <p>Building scalable AI systems, LLM pipelines, and backend APIs.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:vanshsavaliya6565@gmail.com">vanshsavaliya6565@gmail.com</a></p>
+  <p>Location: India 🇮🇳</p>
 </section>
 
 <footer>
-  © 2025 Vansh Savaliya | Built with ❤️ using GitHub Pages
+  © 2025 Vansh Savaliya · Hosted on GitHub Pages
 </footer>
 
 </body>
